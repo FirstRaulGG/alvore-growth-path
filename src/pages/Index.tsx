@@ -1,10 +1,8 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import VerdadeSection from "@/components/VerdadeSection";
-import QuemSomosSection from "@/components/QuemSomosSection";
+import ProblemaSection from "@/components/ProblemaSection";
+import ComoAtuamosSection from "@/components/ComoAtuamosSection";
 import ParaQuemSection from "@/components/ParaQuemSection";
-import DiagnosticoSection from "@/components/DiagnosticoSection";
-import EstruturamosSection from "@/components/EstruturamosSection";
 import CtaFinalSection from "@/components/CtaFinalSection";
 import Footer from "@/components/Footer";
 
@@ -13,11 +11,9 @@ const Index = () => {
     <main className="overflow-hidden">
       <Navbar />
       <HeroSection />
-      <VerdadeSection />
-      <QuemSomosSection />
+      <ProblemaSection />
+      <ComoAtuamosSection />
       <ParaQuemSection />
-      <DiagnosticoSection />
-      <EstruturamosSection />
       <CtaFinalSection />
       <Footer />
     </main>
