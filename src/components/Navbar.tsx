@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { getWhatsAppLinkDiagnostico } from "@/lib/whatsapp";
+import { getWhatsAppLink } from "@/lib/whatsapp";
+import { MessageCircle } from "lucide-react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -13,10 +14,9 @@ const Navbar = () => {
   }, []);
 
   const links = [
-    { label: "Sobre", href: "#verdade" },
-    { label: "Quem Somos", href: "#quem-somos" },
-    { label: "Diagnóstico", href: "#diagnostico" },
-    { label: "Serviços", href: "#servicos" },
+    { label: "O Problema", href: "#problema" },
+    { label: "Como Atuamos", href: "#como-atuamos" },
+    { label: "Para Quem", href: "#para-quem" },
   ];
 
   const scrollTo = (href: string) => {
@@ -42,7 +42,6 @@ const Navbar = () => {
             Alvore
           </a>
 
-          {/* Desktop */}
           <div className="hidden md:flex items-center gap-10">
             {links.map((link) => (
               <button
@@ -54,16 +53,16 @@ const Navbar = () => {
               </button>
             ))}
             <a
-              href={getWhatsAppLinkDiagnostico()}
+              href={getWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="gold-gradient text-dark text-xs font-semibold tracking-widest uppercase px-6 py-2.5 hover:opacity-90 transition-opacity duration-300"
+              className="inline-flex items-center gap-2 gold-gradient text-dark text-xs font-semibold tracking-widest uppercase px-6 py-2.5 hover:opacity-90 transition-opacity duration-300"
             >
-              Contato
+              <MessageCircle className="w-3.5 h-3.5" />
+              WhatsApp
             </a>
           </div>
 
-          {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="md:hidden flex flex-col gap-1.5 w-7"
@@ -76,7 +75,6 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -95,12 +93,13 @@ const Navbar = () => {
               </button>
             ))}
             <a
-              href={getWhatsAppLinkDiagnostico()}
+              href={getWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="gold-gradient text-dark text-sm font-semibold tracking-widest uppercase px-8 py-3 mt-4"
+              className="inline-flex items-center gap-2 gold-gradient text-dark text-sm font-semibold tracking-widest uppercase px-8 py-3 mt-4"
             >
-              Contato
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
             </a>
           </motion.div>
         )}
