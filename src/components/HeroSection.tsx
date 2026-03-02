@@ -13,15 +13,15 @@ const HeroSection = () => {
             className="gold-line mb-10"
             initial={{ width: 0 }}
             animate={{ width: 60 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          />
+            transition={{ duration: 0.8, delay: 0.2 }} />
+          
 
           <motion.h1
             className="text-light text-3xl md:text-5xl lg:text-[3.5rem] font-semibold leading-[1.15] mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-          >
+            transition={{ duration: 0.7, delay: 0.3 }}>
+            
             Empresas que crescem sem estrutura{" "}
             <span className="text-gold">quebram no auge.</span>
           </motion.h1>
@@ -30,9 +30,9 @@ const HeroSection = () => {
             className="text-muted-light text-lg md:text-xl font-light leading-relaxed mb-14 max-w-2xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-          >
-            A Alvore constrói Governança e Arquitetura de Decisão com IA para empresas que querem previsibilidade, controle e crescimento sustentável.
+            transition={{ duration: 0.7, delay: 0.5 }}>
+            Projetamos a Segunda Mente da sua empresa, conectando governança, dados e IA para decisões mais claras e crescimento sustentável.
+
           </motion.p>
 
           <motion.a
@@ -44,15 +44,15 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.7 }}
             whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
+            whileTap={{ scale: 0.98 }}>
+            
             <MessageCircle className="w-5 h-5" />
             Falar com a Alvore no WhatsApp
           </motion.a>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
