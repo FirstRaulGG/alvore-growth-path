@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { MessageCircle } from "lucide-react";
+import alvoreLogo from "@/assets/alvore-logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -38,8 +39,9 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between">
-          <a href="#" className="text-gold text-lg font-semibold tracking-[0.25em] uppercase">
-            Alvore
+          <a href="#" className="flex items-center gap-3">
+            <img src={alvoreLogo} alt="Alvore" className="h-8 w-8 object-contain" />
+            <span className="text-gold text-lg font-semibold tracking-[0.25em] uppercase">Alvore</span>
           </a>
 
           <div className="hidden md:flex items-center gap-10">
