@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5531994497451";
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Olá, quero agendar um Diagnóstico Estratégico para minha empresa."
 );
