@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const perfis = [
   {
-    title: "Empresas entre R$1M e R$20M",
+    title: "Empresas que faturam a partir de R$1M por ano.",
     desc: "Faturamento consolidado, mas sem estrutura financeira e de gestão compatível com o porte.",
   },
   {
