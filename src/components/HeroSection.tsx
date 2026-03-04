@@ -23,7 +23,7 @@ const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.3 }}>
             
             Empresas que escalam constroem estrutura{" "}
-            <span className="text-gold">quebram no auge.</span>
+            <span className="text-gold">para pensar melhor.</span>
           </motion.h1>
 
           <motion.p
