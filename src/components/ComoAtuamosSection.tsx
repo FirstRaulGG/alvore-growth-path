@@ -27,8 +27,13 @@ const ComoAtuamosSection = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="como-atuamos" className="bg-dark py-24 md:py-36">
-      <div ref={ref} className="container mx-auto px-6 md:px-12 lg:px-20">
+    <section id="como-atuamos" className="bg-dark py-28 md:py-40 relative overflow-hidden">
+      {/* Subtle grid background */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+        backgroundImage: `radial-gradient(hsl(var(--gold)) 1px, transparent 1px)`,
+        backgroundSize: '40px 40px',
+      }} />
+      <div ref={ref} className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

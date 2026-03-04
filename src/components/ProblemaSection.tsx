@@ -14,7 +14,7 @@ const ProblemaSection = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="problema" className="bg-light py-24 md:py-36">
+    <section id="problema" className="bg-light py-28 md:py-40">
       <div ref={ref} className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="max-w-3xl mx-auto">
           <motion.div

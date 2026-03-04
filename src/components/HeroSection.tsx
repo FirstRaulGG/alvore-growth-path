@@ -4,8 +4,13 @@ import { MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-dark min-h-screen flex items-center relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50" />
+    <section className="bg-dark min-h-screen flex items-center relative overflow-hidden">
+      {/* Subtle network grid */}
+      <div className="absolute inset-0 opacity-[0.025]" style={{
+        backgroundImage: `radial-gradient(hsl(var(--gold)) 1px, transparent 1px)`,
+        backgroundSize: '50px 50px',
+      }} />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/70" />
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-32 relative z-10">
         <div className="max-w-3xl">
